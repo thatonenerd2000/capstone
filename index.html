@@ -1,20 +1,87 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Put a dope title here</title>
+    <title>E-Wallet</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
-    <link rel="stylesheet" href="./materialize/css/materialize.css">
-    link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./materialize/css/materialize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Starter -->
+    <div id="bg">
+      <div id="intro" style="text-align: center;" class="hide">
+        <h1
+          class="centerit scrolla"
+          data-animate="fadeInLeft"
+          data-duration="2.0s"
+          data-delay="0.1s"
+        >
+          <img src="./media/money.png" height="100" /><u>E-Wallet</u
+          ><img src="./media/money.png" height="100" />
+        </h1>
+        <br />
+        <div
+          class="container scrolla"
+          id="user"
+          style="text-align:center;"
+          data-animate="fadeInRight"
+          data-duration="2.0s"
+          data-delay="0.1s"
+        >
+          <input
+            placeholder="Username"
+            id="first_name"
+            type="text"
+            class="validate container"
+            style="text-align:center"
+          />
+        </div>
+        <br />
+        <a
+          style="text-align:center;"
+          class="waves-effect #ff5252 red accent-2 btn"
+          id="start"
+          >Start</a
+        >
+      </div>
+      <!-- Starter -->
+      <!-- Game -->
+      <div id="balance" style="padding:10px;">
+        <h6>
+          Account Balance: $<span
+            id="ab"
+            style="color:green;font-weight: 300;"
+          ></span>
+        </h6>
+        <h6>
+          Weekly pay: $<span
+            id="pay"
+            style="color:green;font-weight: 300;"
+          ></span>
+        </h6>
+        <h6>Weekly summary in: <span id="paytimer"></span></h6>
+        <h6>Debt: <span id="debt" style="color:red;"></span></h6>
+        <h6>Credit Score: <span id="credit"></span></h6>
+      </div>
+      <!-- Game -->
+    </div>
 
-    
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/scrolla.js"></script>
     <script type="text/javascript" src="./js/scripts.js"></script>
   </body>
 </html>

@@ -1,1 +1,39 @@
+body,
+html,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
 
+/* * {
+  border: 1px solid red;
+} */
+
+#bg {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#00ff09, #07760a);
+}
+
+.centerit {
+  position: relative;
+  font-family: "ZCOOL KuaiLe", cursive;
+  padding-top: 20vh;
+}
+
+#user {
+  height: inherit;
+  width: inherit;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  border-radius: 20px;
+}
+
+#balance {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
+  height: 140px;
+  width: 200px;
+  border-radius: 20px;
+}
