@@ -5,9 +5,9 @@ h1 {
   padding: 0px;
 }
 
-/* * {
-  border: 1px solid red;
-} */
+/* * {*/
+/*  border: 1px solid red;*/
+/*} */
 
 #bg {
   height: 100vh;
@@ -33,7 +33,51 @@ h1 {
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.7)
   );
-  height: 140px;
-  width: 200px;
+  height: 30vh;
+  width: 40vw;
   border-radius: 20px;
+}
+
+#credit{
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
+  height: 35vh;
+  width: 30vw;
+  border-radius: 20px;
+  text-align:center;
+}
+
+#expense{
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
+  height: 60vh;
+  width: 30vw;
+  border-radius: 20px;
+  text-align:center;
+}
+
+#random{
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
+  height: 17vh;
+  width: 70vw;
+  border-radius: 20px;
+  text-align:center;
+}
+
+#store{
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
+  height: 30vh;
+  width: 20vw;
+  border-radius: 20px;
+  text-align:center;
 }

@@ -21,7 +21,7 @@
   <body>
     <!-- Starter -->
     <div id="bg">
-      <div id="intro" style="text-align: center;" class="hide">
+      <div id="intro" style="text-align: center;">
         <h1
           class="centerit scrolla"
           data-animate="fadeInLeft"
@@ -58,22 +58,72 @@
       </div>
       <!-- Starter -->
       <!-- Game -->
-      <div id="balance" style="padding:10px;">
-        <h6>
-          Account Balance: $<span
-            id="ab"
-            style="color:green;font-weight: 300;"
-          ></span>
-        </h6>
-        <h6>
-          Weekly pay: $<span
-            id="pay"
-            style="color:green;font-weight: 300;"
-          ></span>
-        </h6>
-        <h6>Weekly summary in: <span id="paytimer"></span></h6>
-        <h6>Debt: <span id="debt" style="color:red;"></span></h6>
-        <h6>Credit Score: <span id="credit"></span></h6>
+      <div id = "game" style="display:none;"> 
+        <div id="balance" style="padding:10px;text-align:center;">
+          <strong><u><h5 style="">Account</h5></u></strong>
+          <h5>
+            Account Balance: $<span
+              id="ab"
+              style="color:green;font-weight: 300;"
+            ></span>
+          </h5>
+          <h5>
+            Weekly pay: $<span
+              id="pay"
+              style="color:green;font-weight: 300;"
+            ></span>
+          </h5>
+          <h5>Weekly summary in: <span id="paytimer"></span></h5>
+          <h5>Credit Score: <span id="credit"></span></h5>
+        </div>
+        
+        <br>
+        
+        <div id="credit" style="padding:10px;text-align:center;">
+          <strong><u><h5 style="">Credit</h5></u></strong>
+          <h5>Debt: <span id="debt" style="color:red;"></span></h5>
+          <input id="debtinput" type="number" placeholder="Enter amount">
+          <a id="creditbtn" onclick="creditSub()" class="waves-effect waves-light btn">Pay credit card due</a>
+          <p id="nomoneyid" style="color:red; display:none;">You don't have that much money</p>
+          <h5>Next Payment due in: <span id="creditpayuptimer"></span></h5>
+        </div>
+        
+        <div id="expense" style="position:relative;top:-65vh;left:42vw;padding:10px;">
+          <strong><u><h5>Expense</h5></u></strong>
+          <h5>Rent: <span id="rentamount"></span></h5>
+          <h5>Bills: <span id="billamount"></span></h5>
+          <a id="creditpaybtnbill" onclick = "billpaywithcredit()" class="waves-effect waves-light btn">Credit</a>
+          <a id="debitpaybtnbill" onclick = "billpaywithdebit()" class="waves-effect waves-light btn">Debit</a>
+          <h5>Transportation: <span id="transportation"></span></h5>
+          <a id="creditpaybtntrans" onclick = "paywithcredittrans()" class="waves-effect waves-light btn">Credit</a>
+          <a id="debitpaybtntrans" onclick = "paywithdebittrans()" class="waves-effect waves-light btn">Debit</a>
+          <h5>Laundry: <span id="laundry"></span></h5>
+          <a id="creditpaybtnlndry" onclick = "paywithcreditlndry()" class="waves-effect waves-light btn">Credit</a>
+          <a id="debitpaybtnlndry" onclick = "paywithdebitlndry()" class="waves-effect waves-light btn">Debit</a>
+          <h5>Other: <span id="other"></span></h5>
+          <a id="creditpaybtnotr" onclick = "paywithcreditotr()" class="waves-effect waves-light btn">Credit</a>
+          <a id="debitpaybtnotr" onclick = "paywithdebitotr()" class="waves-effect waves-light btn">Debit</a>
+          <h5 style="color:red;">Total: <span id="total"></span></h5>
+        </div>
+        
+        <div id="random" style="padding:10px;text-align:center;position:relative;top:-50vh">
+          <h5>HI, watch out for me :)</h5>
+          <h5 id="rolabel"></h5>
+          <h5><span id="roamount"></span></h5>
+        </div>
+        
+        <div id ="store" style="padding:10px;text-align:center;position:relative;top:-125vh; left:75vw;">
+          <a id="" onclick = "" class="waves-effect waves-light btn red lighten-1">Recreation</a>
+          <br>
+          <br>
+          <a id="" onclick = "" class="waves-effect waves-light btn red disabled">Investements</a>
+          <br>
+          <br>
+          <a id="" onclick = "" class="waves-effect waves-light btn red darken-3 disabled">Car</a>
+          <br>
+          <br>
+          <a id="" onclick = "" class="waves-effect waves-light btn red darken-4 disabled">House</a>
+        </div>  
       </div>
       <!-- Game -->
     </div>
